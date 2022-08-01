@@ -1,20 +1,24 @@
 <template>
-  <div></div>
+  <div>
+    <div>
+      <p>subscribers: {{ subscribers }}</p>
+      <p>views: {{ views }}</p>
+      <p>likes: {{ likes }}</p>
+    </div>
+    <button @click="subscribers++">Subs++</button>
+    <button @click="views++">views++</button>
+    <button @click="likes++">likes++</button>
+  </div>
 </template>
 
 <script>
-import { reactive } from "vue";
+import { ref } from "@vue/reactivity";
 export default {
   setup() {
-    const book = reactive({
-      author: "Vue Team",
-      year: "2020",
-      title: "Vue 3 Guide",
-      description: "당신은 이 책을 지금 바로 읽습니다 ;)",
-      price: "무료",
-    });
-    let { author, title } = book;
-    return {};
+    let subscribers = ref(4000);
+    let views = ref(400);
+    let likes = ref(20);
+    return { subscribers, views, likes };
   },
 };
 </script>
