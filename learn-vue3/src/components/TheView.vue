@@ -2,6 +2,7 @@
   <div>
     <main class="container py-4">
       <PostCreate />
+      <hr class="my-4" />
       <div class="row g-5">
         <div v-for="post in posts" :key="post.id" class="col col-4">
           <AppCard
