@@ -1,7 +1,7 @@
 <template>
   <div>
     <main class="container py-4">
-      <PostCreate />
+      <!-- <PostCreate /> -->
       <div class="row g-5">
         <div v-for="post in posts" :key="post.id" class="col col-4">
           <AppCard
@@ -21,7 +21,7 @@
 <script>
 import { reactive } from "@vue/reactivity";
 import AppCard from "./AppCard.vue";
-import PostCreate from "./PostCreate.vue";
+//import PostCreate from "./PostCreate.vue";
 export default {
   components: {
     AppCard,
