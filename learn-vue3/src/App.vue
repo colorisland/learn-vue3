@@ -12,7 +12,6 @@ export default {
   components: {
     TheNav,
     TheView,
-    TheNav,
   },
   setup() {
     return {};

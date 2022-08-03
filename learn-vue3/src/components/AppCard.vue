@@ -9,7 +9,7 @@
         <p class="card-text">
           {{ contents }}
         </p>
-        <a class="btn" :class="isLikeClass" @click="toggleLike">좋아요</a>
+        <a class="btn" :class="isLikeClass" @click="changeLike">좋아요</a>
         <!-- <br />
         {{ obj }} -->
       </div>
@@ -34,7 +34,7 @@ export default {
     },
     contents: {
       type: String,
-      required: true,
+      //required: true,
     },
     isLike: {
       type: Boolean,
@@ -46,15 +46,15 @@ export default {
       default: () => {},
     },
   },
-  emits: ["toggleLike"],
+  emits: ["changeLike"],
   setup(props, context) {
     let isLikeClass = computed(() =>
       props.isLike ? " btn-warning" : " btn-outline-warning"
     );
-    let toggleLike = () => {
+    let changeLike = () => {
       context.emit("changeLike");
     };
-    return { isLikeClass, toggleLike };
+    return { isLikeClass, changeLike };
   },
 };
 </script>
