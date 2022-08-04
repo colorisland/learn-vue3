@@ -1,14 +1,14 @@
 <template>
   <main>
-    <ScriptSetup />
+    <DynamicComponent />
   </main>
 </template>
 
 <script>
-import ScriptSetup from "./ScriptSetup.vue";
+import DynamicComponent from "./DynamicComponent.vue";
 export default {
   components: {
-    ScriptSetup,
+    DynamicComponent,
   },
   setup() {
     return {};

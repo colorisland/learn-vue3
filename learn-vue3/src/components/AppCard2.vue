@@ -1,14 +1,14 @@
 <template>
   <div class="card">
     <div class="card-header">
-      <slot name="header">#header</slot>
+      <slot>#header</slot>
     </div>
-    <div class="card-body">
+    <!-- <div class="card-body">
       <slot>#body</slot>
     </div>
     <div class="card-footer text-muted">
       <slot name="footer">#footer</slot>
-    </div>
+    </div> -->
   </div>
 </template>
 
