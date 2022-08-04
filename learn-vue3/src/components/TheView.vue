@@ -1,14 +1,14 @@
 <template>
   <main>
-    <ProvideInject />
+    <ScriptSetup />
   </main>
 </template>
 
 <script>
-import ProvideInject from "./ProvideInject.vue";
+import ScriptSetup from "./ScriptSetup.vue";
 export default {
   components: {
-    ProvideInject,
+    ScriptSetup,
   },
   setup() {
     return {};
