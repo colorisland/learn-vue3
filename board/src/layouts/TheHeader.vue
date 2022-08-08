@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <header>
     <nav class="navbar navbar-expand-sm navbar-dark bg-info">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Board</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -17,11 +17,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <RouterLink class="nav-link" active-class="active" to="/"
+                >기획전</RouterLink
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <RouterLink class="nav-link" active-class="active" to="/about"
+                >About</RouterLink
+              >
             </li>
+
             <li class="nav-item">
               <a
                 class="nav-link disabled"
@@ -39,20 +44,16 @@
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-light" type="submit">Search</button>
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
           </form>
         </div>
       </div>
     </nav>
-  </div>
+  </header>
 </template>
 
-<script>
-export default {
-  setup() {
-    return {};
-  },
-};
-</script>
+<script setup></script>
 
 <style lang="scss" scoped></style>

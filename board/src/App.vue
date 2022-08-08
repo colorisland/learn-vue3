@@ -1,12 +1,11 @@
-<template>
-  <div>
-    <the-nav></the-nav>
-    <the-view></the-view>
-  </div>
-</template>
 <script setup>
-import TheNav from "./components/TheNav.vue";
-import TheView from "./components/TheView.vue";
+import TheHeader from "./layouts/TheHeader.vue";
+import TheView from "./layouts/TheView.vue";
 </script>
+
+<template>
+  <TheHeader />
+  <TheView />
+</template>
 
 <style scoped></style>
