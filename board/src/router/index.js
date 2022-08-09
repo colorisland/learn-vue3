@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import CircleSlideView from "@/views/CircleSlideView.vue";
-import AboutView from "@/views/AboutView.vue";
+import BroadcastView from "@/views/BroadcastView.vue";
 
 let routes = [
   {
@@ -9,9 +9,9 @@ let routes = [
     component: CircleSlideView,
   },
   {
-    path: "/about",
-    name: "About",
-    component: AboutView,
+    path: "/broadcast",
+    name: "BroadcastView",
+    component: BroadcastView,
   },
 ];
 

@@ -22,8 +22,8 @@
               >
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" active-class="active" to="/about"
-                >About</RouterLink
+              <RouterLink class="nav-link" active-class="active" to="/broadcast"
+                >Broadcast</RouterLink
               >
             </li>
 

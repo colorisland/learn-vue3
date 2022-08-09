@@ -13,7 +13,7 @@
 import { ref, onMounted } from "vue";
 import { VueGoodTable } from "vue-good-table-next";
 import axios from "axios";
-let getInfo = () => {
+let getCircleSlideInfo = () => {
   let url = "http://localhost:8080/customer/contents/circleslide";
   axios.get(url).then((response) => {
     rows.value = response.data;
@@ -65,7 +65,7 @@ let columns = ref([
   },
 ]);
 onMounted(() => {
-  getInfo();
+  getCircleSlideInfo();
 });
 </script>
 
